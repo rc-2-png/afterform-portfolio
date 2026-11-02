@@ -17,6 +17,7 @@ const PORTFOLIO_LABELS = {
   guide: "引导页",
   detail: "详情长页",
   poster: "平面海报",
+  series: "剧集影像",
 };
 const ASSET_BASE = "./assets/portfolio";
 const videoItems = [
@@ -26,6 +27,32 @@ const videoItems = [
   { title: "公益广告", description: "公益主题短片 · 横版 16:9 · 约 53 秒", file: "public-service", orientation: "landscape" },
   { title: "广告四 / A", description: "广告短片 · 横版 16:9 · 约 30 秒", file: "tvc-04a", orientation: "landscape" },
   { title: "广告四 / B", description: "广告短片 · 横版 16:9 · 约 30 秒", file: "tvc-04b", orientation: "landscape" },
+];
+const seriesItems = [
+  {
+    title: "归零纪元",
+    description: "第 01 集 · 本剧播放顺序 01 / 02",
+    file: "zero-era-episode-01",
+    sequence: "归零纪元 / EP 01 · PLAY 01/02",
+  },
+  {
+    title: "归零纪元",
+    description: "第 02 集 · 本剧播放顺序 02 / 02",
+    file: "zero-era-episode-02",
+    sequence: "归零纪元 / EP 02 · PLAY 02/02",
+  },
+  {
+    title: "道士遇上丧尸",
+    description: "第 02 集 · 本剧播放顺序 01 / 02",
+    file: "zombie-taoist-episode-02",
+    sequence: "道士遇上丧尸 / EP 02 · PLAY 01/02",
+  },
+  {
+    title: "道士遇上丧尸",
+    description: "第 03 集 · 本剧播放顺序 02 / 02",
+    file: "zombie-taoist-episode-03",
+    sequence: "道士遇上丧尸 / EP 03 · PLAY 02/02",
+  },
 ];
 const splashItems = [
   { title: "山水茶器", description: "水墨山景与茶器静物" },
@@ -76,6 +103,14 @@ const portfolioItems = [
     type: "video",
     src: `${ASSET_BASE}/ads/${item.file}.mp4`,
     preview: `${ASSET_BASE}/ads/${item.file}.webp`,
+  })),
+  ...seriesItems.map((item) => ({
+    ...item,
+    category: "series",
+    type: "video",
+    src: `${ASSET_BASE}/series/${item.file}.mp4`,
+    preview: `${ASSET_BASE}/series/${item.file}.webp`,
+    orientation: "landscape",
   })),
   ...splashItems.map((item, index) => {
     const file = `${ASSET_BASE}/splash/splash-${String(index + 1).padStart(2, "0")}.webp`;
