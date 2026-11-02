@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#080d17">
-    <meta name="description" content="AFTERFORM 创意实验室，探索生成式影像、空间与交互体验的边界。">
+    <meta name="description" content="AFTERFORM 作品集：广告短片、产品闪屏、交互引导、详情长页与视觉海报。">
     <title>AFTERFORM — 合成未来，抵达此刻</title>
-    <link rel="stylesheet" href="./styles.css?v=2">
-    <script src="./app.js?v=2" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=3">
+    <script src="./app.js?v=3" defer></script>
   </head>
   <body class="is-intro-active">
     <a class="skip-link" id="skip-intro" href="#main">跳过序幕</a>
@@ -186,70 +186,43 @@
       </section>
 
       <section class="panel work-panel" id="work" data-panel="02" aria-labelledby="work-title">
-        <div class="section-topline mono"><span>02 — SELECTED WORLDS</span><span>2023 — 2025</span></div>
+        <div class="section-topline mono"><span>02 — SELECTED WORLDS</span><span>IMAGE / MOTION / INTERACTION</span></div>
         <div class="work-heading">
           <div>
             <p class="eyebrow mono reveal"><span class="status-dot"></span> A FEW THINGS WE MADE</p>
             <h2 class="section-title reveal" id="work-title">想象的<span class="accent-text">现场</span><span class="title-period">.</span></h2>
           </div>
-          <p class="work-note mono reveal">03 SELECTED PROJECTS<br>SCROLL TO INSPECT ↓</p>
+          <p class="work-note mono reveal">40 SELECTED PIECES / 05 FORMATS<br>SELECT A FRAME TO INSPECT ↓</p>
         </div>
-        <div class="project-list">
-          <article class="project-card project-card--deep reveal" data-project="01">
-            <a class="project-link" href="#contact" aria-label="了解深海档案项目并联系">
-              <div class="project-art project-art--deep" aria-hidden="true">
-                <div class="deep-grid"></div>
-                <div class="deep-object">
-                  <span class="deep-ring deep-ring--a"></span><span class="deep-ring deep-ring--b"></span>
-                  <span class="deep-sphere"></span><span class="deep-glint"></span>
-                </div>
-                <span class="art-label mono">SIMULATED DEPTH / 4,800 M</span>
-                <span class="art-coordinate mono">02:14:08:17</span>
-                <span class="art-scanline"></span>
-              </div>
-              <div class="project-info">
-                <span class="project-number mono">01 / IMMERSIVE WORLD</span>
-                <h3>深海档案</h3>
-                <p>一座由 AI 共同生成的虚构海洋博物馆</p>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-          </article>
-          <article class="project-card project-card--scent reveal" data-project="02">
-            <a class="project-link" href="#contact" aria-label="了解气味显影项目并联系">
-              <div class="project-art project-art--scent" aria-hidden="true">
-                <div class="scent-halo scent-halo--one"></div><div class="scent-halo scent-halo--two"></div>
-                <div class="scent-bottle"><span></span><i></i><b></b></div>
-                <span class="art-label mono">FORMULA / 03—A</span>
-                <span class="art-coordinate mono">MEMORY, DISTILLED</span>
-                <span class="scent-particle scent-particle--one"></span><span class="scent-particle scent-particle--two"></span>
-              </div>
-              <div class="project-info">
-                <span class="project-number mono">02 / GENERATIVE IDENTITY</span>
-                <h3>气味显影</h3>
-                <p>把不可见的记忆，转译成一套视觉语言</p>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-          </article>
-          <article class="project-card project-card--film reveal" data-project="03">
-            <a class="project-link" href="#contact" aria-label="了解第七码头项目并联系">
-              <div class="project-art project-art--film" aria-hidden="true">
-                <div class="film-sun"></div><div class="film-ridge film-ridge--back"></div><div class="film-ridge film-ridge--front"></div>
-                <div class="film-frame mono"><span>FRAME 0164</span><span>24 FPS</span></div>
-                <span class="art-label mono">AI SHORT FILM / 04:32</span>
-                <span class="film-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="project-info">
-                <span class="project-number mono">03 / SYNTHETIC CINEMA</span>
-                <h3>第七码头</h3>
-                <p>一部在梦境与现实之间漂流的 AI 短片</p>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-          </article>
+        <div class="portfolio-catalog">
+          <div class="portfolio-toolbar">
+            <div class="portfolio-filters" role="group" aria-label="按作品类型筛选">
+              <button class="portfolio-filter is-active" type="button" data-filter="all" aria-pressed="true">
+                全部 <span class="mono" data-filter-count></span>
+              </button>
+              <button class="portfolio-filter" type="button" data-filter="ads" aria-pressed="false">
+                广告 <span class="mono" data-filter-count></span>
+              </button>
+              <button class="portfolio-filter" type="button" data-filter="splash" aria-pressed="false">
+                闪屏 <span class="mono" data-filter-count></span>
+              </button>
+              <button class="portfolio-filter" type="button" data-filter="guide" aria-pressed="false">
+                引导页 <span class="mono" data-filter-count></span>
+              </button>
+              <button class="portfolio-filter" type="button" data-filter="detail" aria-pressed="false">
+                详情页 <span class="mono" data-filter-count></span>
+              </button>
+              <button class="portfolio-filter" type="button" data-filter="poster" aria-pressed="false">
+                海报 <span class="mono" data-filter-count></span>
+              </button>
+            </div>
+            <p class="portfolio-live mono" aria-live="polite">
+              <span class="status-dot"></span><span id="portfolio-visible-count">40</span> PIECES / 05 FORMATS
+            </p>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid" aria-label="作品集"></div>
         </div>
-        <div class="work-foot mono"><span>END OF SELECTED WORLDS</span><span>MORE IN THE MAKING <i></i></span></div>
+        <div class="work-foot mono"><span>40 PIECES / 05 FORMATS</span><span>IMAGES OPTIMIZED / VIDEO LOADS ON DEMAND <i></i></span></div>
       </section>
 
       <section class="panel method-panel" id="method" data-panel="03" aria-labelledby="method-title">
@@ -301,6 +274,30 @@
         <div class="contact-coord mono" aria-hidden="true">END OF TRANSMISSION<br>— SEE YOU IN THE NEXT WORLD</div>
       </section>
     </main>
+
+    <dialog class="media-dialog" id="media-dialog" aria-labelledby="media-title">
+      <div class="media-dialog__shell">
+        <header class="media-dialog__header">
+          <div>
+            <p class="eyebrow mono"><span class="status-dot"></span> AFTERFORM / ARCHIVE</p>
+            <h2 id="media-title"></h2>
+          </div>
+          <button class="media-dialog__close" id="media-close" type="button" aria-label="关闭作品查看器">×</button>
+        </header>
+        <div class="media-dialog__viewer" id="media-viewer"></div>
+        <div class="media-dialog__footer">
+          <div>
+            <p class="media-dialog__description" id="media-description"></p>
+            <p class="media-dialog__status mono" id="media-status" role="status" aria-live="polite"></p>
+          </div>
+          <div class="media-dialog__controls">
+            <span class="media-dialog__counter mono" id="media-counter"></span>
+            <button id="media-previous" type="button" aria-label="查看上一屏">←</button>
+            <button id="media-next" type="button" aria-label="查看下一屏">→</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
     <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
     <div class="audio-status mono" id="audio-status" role="status" aria-live="polite"></div>

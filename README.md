@@ -14,9 +14,10 @@ The `main` branch deploys automatically through `.github/workflows/pages.yml`. A
 
 ## Replaceable content
 
-- `app.js` — edit the `SITE_CONFIG` block for brand name, contact address, featured project labels, and audio defaults.
-- `index.html` — edit Chinese headlines, descriptions, navigation labels, and project narratives.
+- `app.js` — edit the `SITE_CONFIG` block for brand, contact address, and audio defaults; edit the media lists to change portfolio titles and descriptions.
+- `index.html` — edit Chinese headlines, section copy, and navigation labels.
 - `styles.css` — edit the color tokens in `:root` to adjust the near-black base, primary glow, and warm accent.
+- `assets/portfolio/` — WebP artwork and H.264 MP4 advertisements optimized for web delivery, organized into `ads`, `splash`, `guide`, `detail`, and `poster`. Update the matching item lists in `app.js` when replacing assets; videos are only requested after a visitor opens one.
 
 ## Delivery self-check
 
