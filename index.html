@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN" class="is-intro-active">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080d17">
+    <meta name="description" content="AFTERFORM 创意实验室，探索生成式影像、空间与交互体验的边界。">
+    <title>AFTERFORM — 合成未来，抵达此刻</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body class="is-intro-active">
+    <a class="skip-link" id="skip-intro" href="#main">跳过序幕</a>
+
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="page-scanlines" aria-hidden="true"></div>
+    <div class="pointer-reticle" aria-hidden="true">
+      <span></span><i></i>
+    </div>
+
+    <div class="intro-sequence" id="intro-sequence" aria-label="AFTERFORM 开场序幕">
+      <div class="intro-grain" aria-hidden="true"></div>
+      <div class="intro-topline mono">
+        <a href="#main" class="intro-wordmark">AFTERFORM <span>®</span></a>
+        <span>GENERATIVE CREATIVE STUDIO / 2025</span>
+        <span class="intro-live"><i></i> TRANSMISSION ACTIVE</span>
+      </div>
+
+      <section class="intro-scene intro-scene--moon is-active" data-intro-scene="0" aria-hidden="false" aria-label="第一屏：抵达一片新的地平线">
+        <div class="moon-sky" aria-hidden="true">
+          <div class="moon-stars"></div>
+          <div class="moon-halo"></div>
+          <div class="moon-planet"><span></span></div>
+          <div class="moon-orbit moon-orbit--one"></div>
+          <div class="moon-orbit moon-orbit--two"></div>
+          <div class="moon-scan"></div>
+          <span class="moon-coordinate mono">LUNAR FIELD / 001<br>LAT. 35° 41′ 22″ N</span>
+        </div>
+        <div class="intro-copy intro-copy--moon">
+          <p class="eyebrow mono"><span class="status-dot"></span> A NEW CREATIVE FRONTIER</p>
+          <h1>每一种未来，<br><em>都始于想象。</em></h1>
+          <p class="intro-description">越过熟悉的边界，抵达尚未命名的世界。</p>
+        </div>
+        <span class="scene-index mono">01 <i></i> 04 / ARRIVAL</span>
+      </section>
+
+      <section class="intro-scene intro-scene--signal" data-intro-scene="1" aria-hidden="true" aria-label="第二屏：让想象脱离重力">
+        <div class="signal-art" aria-hidden="true">
+          <div class="signal-cross signal-cross--center"></div>
+          <div class="signal-orbit signal-orbit--a"></div>
+          <div class="signal-orbit signal-orbit--b"></div>
+          <div class="signal-orbit signal-orbit--c"></div>
+          <div class="signal-core"></div>
+          <div class="signal-fragments"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="signal-readout mono">MATTER / IN MOTION<br>ENERGY / 98.6%</span>
+        </div>
+        <div class="intro-copy intro-copy--signal">
+          <p class="eyebrow mono"><span class="status-dot"></span> HUMAN INTENT × MACHINE POSSIBILITY</p>
+          <h2>让想象<br><em>脱离重力。</em></h2>
+          <p class="intro-description">生成不是终点。它是一个世界开始生长的瞬间。</p>
+        </div>
+        <span class="scene-index mono">02 <i></i> 04 / IGNITION</span>
+      </section>
+
+      <section class="intro-scene intro-scene--world" data-intro-scene="2" aria-hidden="true" aria-label="第三屏：把念头变成可感知的世界">
+        <div class="world-art" aria-hidden="true">
+          <div class="world-frame world-frame--back"><span>01 / SPATIAL STUDY</span></div>
+          <div class="world-frame world-frame--front">
+            <div class="world-dunes"></div><div class="world-globe"></div>
+            <span class="world-frame-label mono">SYNTHETIC WORLD / 03—A</span>
+          </div>
+          <div class="world-index mono">FIG. 03<br>WORLD, REIMAGINED</div>
+        </div>
+        <div class="intro-copy intro-copy--world">
+          <p class="eyebrow mono"><span class="status-dot"></span> IMAGE / SPACE / INTERACTION</p>
+          <h2>把念头，<br>变成<span>世界。</span></h2>
+          <p class="intro-description">影像、空间、交互体验——让看不见的可能，被亲身感知。</p>
+        </div>
+        <span class="scene-index mono">03 <i></i> 04 / FORMATION</span>
+      </section>
+
+      <section class="intro-scene intro-scene--enter" data-intro-scene="3" aria-hidden="true" aria-label="第四屏：进入 AFTERFORM 作品集">
+        <div class="enter-art" aria-hidden="true">
+          <div class="enter-art-ring enter-art-ring--outer"></div>
+          <div class="enter-art-ring enter-art-ring--middle"></div>
+          <div class="enter-art-ring enter-art-ring--inner"></div>
+          <div class="enter-art-core"></div>
+          <span class="enter-art-label mono">AFTERFORM / CREATIVE LAB</span>
+          <span class="enter-art-coordinate mono">SCROLL TO BEGIN<br>OR PRESS ENTER</span>
+        </div>
+        <div class="intro-copy intro-copy--enter">
+          <p class="eyebrow mono"><span class="status-dot"></span> AN INDEPENDENT AIGC PORTFOLIO</p>
+          <h2>MAKE THE<br><em>UNIMAGINED.</em></h2>
+          <p class="intro-description">四个片段，一次向内的旅程。<br>继续向下，进入作品集。</p>
+          <button class="intro-enter-button" id="enter-portfolio" type="button">
+            <span>进入作品集</span><i aria-hidden="true">↗</i>
+          </button>
+        </div>
+        <span class="scene-index mono">04 <i></i> 04 / OPEN</span>
+      </section>
+
+      <nav class="intro-pagination" aria-label="序幕屏幕">
+        <button type="button" class="is-active" data-intro-target="0" aria-label="第 1 屏：抵达" aria-current="step"><span>01</span></button>
+        <button type="button" data-intro-target="1" aria-label="第 2 屏：点燃"><span>02</span></button>
+        <button type="button" data-intro-target="2" aria-label="第 3 屏：成形"><span>03</span></button>
+        <button type="button" data-intro-target="3" aria-label="第 4 屏：进入"><span>04</span></button>
+      </nav>
+      <div class="intro-bottomline mono">
+        <span>SCROLL / SWIPE TO CONTINUE</span>
+        <span class="scroll-cue"><i></i> NEXT SCENE</span>
+        <span>WEB AUDIO / READY</span>
+      </div>
+    </div>
+
+    <header class="site-header" aria-hidden="true">
+      <a class="wordmark" href="#top" aria-label="AFTERFORM 首页">
+        <span class="wordmark-symbol" aria-hidden="true">A<span>F</span></span>
+        <span><span data-site-brand>AFTERFORM</span><span class="wordmark-sub mono">CREATIVE LAB</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="主导航">
+        <a href="#work"><span class="nav-index mono">01</span>作品</a>
+        <a href="#method"><span class="nav-index mono">02</span>方法</a>
+        <a href="#contact"><span class="nav-index mono">03</span>联系</a>
+      </nav>
+      <div class="header-status mono"><span class="status-dot"></span> SYSTEM ONLINE</div>
+      <button class="sound-capsule" id="sound-toggle" type="button" aria-label="开启背景声音" aria-pressed="false">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="sound-label mono">SOUND <b id="sound-state">OFF</b></span>
+      </button>
+    </header>
+
+    <main id="main" aria-hidden="true" tabindex="-1">
+      <section class="panel hero-panel" id="top" data-panel="00" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-orbit hero-orbit--one"></div>
+          <div class="hero-orbit hero-orbit--two"></div>
+          <div class="hero-scan"></div>
+        </div>
+        <div class="hero-meta mono">
+          <span>INDEPENDENT CREATIVE PRACTICE</span>
+          <span>35° 41′ 22″ N / 139° 41′ 30″ E</span>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow mono reveal">生成式影像 · 空间 · 交互</p>
+          <h2 class="hero-title reveal" id="hero-title" tabindex="-1">合成未来，<br><span>抵达此刻</span><sup>®</sup></h2>
+          <p class="hero-intro reveal">我们让人工智能成为创意的延伸，<br>把不可能的想象，推演成可感知的现实。</p>
+          <a class="text-link reveal" href="#work"><span>探索精选项目</span><span class="link-arrow" aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-index mono"><span>00 / 04</span><span class="index-rule"></span><span>SCROLL TO DESCEND</span></div>
+        <div class="hero-side mono" aria-hidden="true">SYNTHETIC WORLDS / VOL.01</div>
+        <div class="hero-hud hud-corner hud-corner--left" aria-hidden="true">
+          <span class="hud-cross"></span><span>LAT. 35.6895</span>
+        </div>
+        <div class="hero-hud hud-corner hud-corner--right mono" aria-hidden="true">
+          <span>FIELD / 001</span><span class="hud-meter"><i></i></span>
+        </div>
+      </section>
+
+      <section class="panel manifesto-panel" id="manifesto" data-panel="01" aria-labelledby="manifesto-title">
+        <div class="section-topline mono"><span>01 — WHY WE MAKE</span><span>IDEAS INTO MATTER</span></div>
+        <div class="manifesto-layout">
+          <div class="manifesto-aside reveal">
+            <span class="section-mark mono">A / F</span>
+            <span class="vertical-label mono">IMAGINATION IS A MATERIAL</span>
+          </div>
+          <div class="manifesto-main">
+            <p class="eyebrow mono reveal"><span class="status-dot"></span> OUR POINT OF VIEW</p>
+            <h2 class="manifesto-title reveal" id="manifesto-title">不是生成更多，<br>而是让<span class="outlined">想象</span><br>拥有新的<span class="accent-text">形状。</span></h2>
+            <div class="manifesto-bottom reveal">
+              <p>从模型到材质，从像素到空间。我们把生成式技术带入真实的创作流程，为品牌、文化与未来生活，设计值得停留的体验。</p>
+              <div class="manifesto-coordinate mono"><span>CREATIVE FREQUENCY</span><strong>∞ <small>HZ</small></strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="manifesto-visual" aria-hidden="true">
+          <div class="visual-ring visual-ring--outer"></div>
+          <div class="visual-ring visual-ring--mid"></div>
+          <div class="visual-ring visual-ring--inner"></div>
+          <div class="visual-core"></div>
+          <span class="visual-cross visual-cross--a">+</span><span class="visual-cross visual-cross--b">+</span>
+          <span class="visual-caption mono">FIG. 01 / IDEA IN MOTION</span>
+        </div>
+      </section>
+
+      <section class="panel work-panel" id="work" data-panel="02" aria-labelledby="work-title">
+        <div class="section-topline mono"><span>02 — SELECTED WORLDS</span><span>2023 — 2025</span></div>
+        <div class="work-heading">
+          <div>
+            <p class="eyebrow mono reveal"><span class="status-dot"></span> A FEW THINGS WE MADE</p>
+            <h2 class="section-title reveal" id="work-title">想象的<span class="accent-text">现场</span><span class="title-period">.</span></h2>
+          </div>
+          <p class="work-note mono reveal">03 SELECTED PROJECTS<br>SCROLL TO INSPECT ↓</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card project-card--deep reveal" data-project="01">
+            <a class="project-link" href="#contact" aria-label="了解深海档案项目并联系">
+              <div class="project-art project-art--deep" aria-hidden="true">
+                <div class="deep-grid"></div>
+                <div class="deep-object">
+                  <span class="deep-ring deep-ring--a"></span><span class="deep-ring deep-ring--b"></span>
+                  <span class="deep-sphere"></span><span class="deep-glint"></span>
+                </div>
+                <span class="art-label mono">SIMULATED DEPTH / 4,800 M</span>
+                <span class="art-coordinate mono">02:14:08:17</span>
+                <span class="art-scanline"></span>
+              </div>
+              <div class="project-info">
+                <span class="project-number mono">01 / IMMERSIVE WORLD</span>
+                <h3>深海档案</h3>
+                <p>一座由 AI 共同生成的虚构海洋博物馆</p>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card project-card--scent reveal" data-project="02">
+            <a class="project-link" href="#contact" aria-label="了解气味显影项目并联系">
+              <div class="project-art project-art--scent" aria-hidden="true">
+                <div class="scent-halo scent-halo--one"></div><div class="scent-halo scent-halo--two"></div>
+                <div class="scent-bottle"><span></span><i></i><b></b></div>
+                <span class="art-label mono">FORMULA / 03—A</span>
+                <span class="art-coordinate mono">MEMORY, DISTILLED</span>
+                <span class="scent-particle scent-particle--one"></span><span class="scent-particle scent-particle--two"></span>
+              </div>
+              <div class="project-info">
+                <span class="project-number mono">02 / GENERATIVE IDENTITY</span>
+                <h3>气味显影</h3>
+                <p>把不可见的记忆，转译成一套视觉语言</p>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card project-card--film reveal" data-project="03">
+            <a class="project-link" href="#contact" aria-label="了解第七码头项目并联系">
+              <div class="project-art project-art--film" aria-hidden="true">
+                <div class="film-sun"></div><div class="film-ridge film-ridge--back"></div><div class="film-ridge film-ridge--front"></div>
+                <div class="film-frame mono"><span>FRAME 0164</span><span>24 FPS</span></div>
+                <span class="art-label mono">AI SHORT FILM / 04:32</span>
+                <span class="film-play" aria-hidden="true">▶</span>
+              </div>
+              <div class="project-info">
+                <span class="project-number mono">03 / SYNTHETIC CINEMA</span>
+                <h3>第七码头</h3>
+                <p>一部在梦境与现实之间漂流的 AI 短片</p>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="work-foot mono"><span>END OF SELECTED WORLDS</span><span>MORE IN THE MAKING <i></i></span></div>
+      </section>
+
+      <section class="panel method-panel" id="method" data-panel="03" aria-labelledby="method-title">
+        <div class="section-topline mono"><span>03 — OUR METHOD</span><span>HUMAN INTENT / MACHINE POSSIBILITY</span></div>
+        <div class="method-layout">
+          <div class="method-copy">
+            <p class="eyebrow mono reveal"><span class="status-dot"></span> A CREATIVE LOOP, NOT A PROMPT</p>
+            <h2 class="section-title reveal" id="method-title">好奇，<br>再多走<span class="accent-text">一步</span><span class="title-period">.</span></h2>
+            <p class="method-intro reveal">技术负责打开入口，判断力决定我们往哪里走。每一次生成，都是下一次选择的起点。</p>
+            <a class="text-link reveal" href="#contact"><span>一起开始一场实验</span><span class="link-arrow" aria-hidden="true">↘</span></a>
+          </div>
+          <div class="method-diagram reveal" aria-label="创作过程：观察、生成、选择、塑形">
+            <div class="diagram-orbit diagram-orbit--outer"></div>
+            <div class="diagram-orbit diagram-orbit--inner"></div>
+            <div class="diagram-core"><span class="mono">HUMAN<br>× MACHINE</span></div>
+            <div class="diagram-node diagram-node--one"><span class="mono">01</span><b>观察</b></div>
+            <div class="diagram-node diagram-node--two"><span class="mono">02</span><b>生成</b></div>
+            <div class="diagram-node diagram-node--three"><span class="mono">03</span><b>选择</b></div>
+            <div class="diagram-node diagram-node--four"><span class="mono">04</span><b>塑形</b></div>
+            <div class="diagram-readout mono"><span>ITERATION / ∞</span><span>OUTPUT / INTENTIONAL</span></div>
+          </div>
+        </div>
+        <div class="method-stats">
+          <div class="stat-cell reveal"><span class="stat-number">∞</span><span class="stat-label mono">POSSIBLE WORLDS</span></div>
+          <div class="stat-cell reveal"><span class="stat-number">01<span class="stat-unit">/</span></span><span class="stat-label mono">HUMAN POINT OF VIEW</span></div>
+          <div class="stat-cell reveal"><span class="stat-number">0<span class="stat-unit">%</span></span><span class="stat-label mono">TEMPLATE THINKING</span></div>
+          <div class="stat-foot mono">LESS AUTOMATION.<br>MORE IMAGINATION.</div>
+        </div>
+      </section>
+
+      <section class="panel contact-panel" id="contact" data-panel="04" aria-labelledby="contact-title">
+        <div class="contact-grid" aria-hidden="true"></div>
+        <div class="section-topline mono"><span>04 — YOUR TURN</span><span>OPEN FOR COLLABORATION</span></div>
+        <div class="contact-content">
+          <p class="eyebrow mono reveal"><span class="status-dot"></span> HAVE A STRANGE IDEA?</p>
+          <h2 class="contact-title reveal" id="contact-title">让它<br><span>发生。</span><i>↗</i></h2>
+          <p class="contact-copy reveal">一个念头，一种新的可能。<br>把你的下一件作品，交给想象力。</p>
+          <a class="contact-cta reveal" id="contact-email" href="mailto:hello@afterform.studio">
+            <span>发起一次对话</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="contact-signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <footer class="site-footer mono">
+          <a class="footer-mark" href="#top"><span data-site-brand>AFTERFORM</span> <span>®</span></a>
+          <span>INDEPENDENT CREATIVE PRACTICE / EST. 2025</span>
+          <a href="#top" class="back-top">BACK TO ORIGIN ↑</a>
+          <span class="copyright">© <span id="current-year">2025</span> / ALL IMAGINATIONS RESERVED</span>
+        </footer>
+        <div class="contact-coord mono" aria-hidden="true">END OF TRANSMISSION<br>— SEE YOU IN THE NEXT WORLD</div>
+      </section>
+    </main>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <div class="audio-status mono" id="audio-status" role="status" aria-live="polite"></div>
+  </body>
+</html>
