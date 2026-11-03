@@ -30,28 +30,28 @@ const videoItems = [
 ];
 const seriesItems = [
   {
-    title: "归零纪元",
-    description: "第 01 集 · 本剧播放顺序 01 / 02",
+    title: "归零纪元 · 灰雨之后",
+    description: "归零纪元 · 第 01 / 10 集 · 本次收录 01 / 02",
     file: "zero-era-episode-01",
-    sequence: "归零纪元 / EP 01 · PLAY 01/02",
+    sequence: "归零纪元 / EP 01/10 · PLAY 01/02",
   },
   {
-    title: "归零纪元",
-    description: "第 02 集 · 本剧播放顺序 02 / 02",
+    title: "归零纪元 · 方舟",
+    description: "归零纪元 · 第 02 / 10 集 · 本次收录 02 / 02",
     file: "zero-era-episode-02",
-    sequence: "归零纪元 / EP 02 · PLAY 02/02",
+    sequence: "归零纪元 / EP 02/10 · PLAY 02/02",
   },
   {
-    title: "道士遇上丧尸",
-    description: "第 02 集 · 本剧播放顺序 01 / 02",
+    title: "道士遇上丧尸 · 古屋脱困",
+    description: "道士遇上丧尸 · 第 02 / 15 集 · 本次收录 01 / 02",
     file: "zombie-taoist-episode-02",
-    sequence: "道士遇上丧尸 / EP 02 · PLAY 01/02",
+    sequence: "道士遇上丧尸 / EP 02/15 · PLAY 01/02",
   },
   {
-    title: "道士遇上丧尸",
-    description: "第 03 集 · 本剧播放顺序 02 / 02",
+    title: "道士遇上丧尸 · 废城求生",
+    description: "道士遇上丧尸 · 第 03 / 15 集 · 本次收录 02 / 02",
     file: "zombie-taoist-episode-03",
-    sequence: "道士遇上丧尸 / EP 03 · PLAY 02/02",
+    sequence: "道士遇上丧尸 / EP 03/15 · PLAY 02/02",
   },
 ];
 const splashItems = [
